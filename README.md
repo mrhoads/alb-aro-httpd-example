@@ -18,6 +18,8 @@ working `oc` command line environment connected to your cluster already:
 
 `$ oc new-app centos/httpd-24-centos7~https://github.com/mrhoads/alb-aro-httpd-example`
 
+Expose the service with `oc expose service/alb-aro-httpd-example` and see the route
+
 You can also deploy the sample template for the application:
 
 `$ oc new-app -f https://raw.githubusercontent.com/mrhoads/alb-aro-httpd-example/master/openshift/templates/httpd.json`
